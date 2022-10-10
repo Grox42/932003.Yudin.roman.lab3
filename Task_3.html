@@ -14,7 +14,7 @@
 				color: white;
 				text-align: center;
 				font-size: 24px;
-				line-height: 40px;
+				line-height: 5vh;
 			}
 			td.left {
 				background: red;
@@ -30,16 +30,6 @@
 				text-align: justify;
 				padding: 20px;
 			}
-			@media screen and (max-height: 1024px) {
-				td {
-					height: 689px;
-				}
-			}
-			@media screen and (max-height: 750px) {
-				td {
-					height: 100%;
-				}
-			}
 			td.right::selection {
 				background: forestgreen;
 				color: white;
@@ -49,12 +39,10 @@
 				font-size: 15pt;
 			}
 			footer {
-				bottom: 0px;
 				background: black;
 				color: white;
 				text-align: center;
-				line-height: 25px;
-				line-height: 25px;
+				line-height: 3vh;
 			}
 			li {
 				margin: 5px 0px;
@@ -73,7 +61,11 @@
 	
 		<header>Header</header>
 		
-		<table style="margin: -2px auto;">
+		<table style="margin: 0px auto; height: 92vh;">
+		<tbody> 	<!--
+						Не знаю как избавиться от отступа между table и tbody.
+						Как обойти эту ситуацию?
+					-->
 			<tr valign="top">
 				<td class="left">
 					<ul style="padding: 0px 10px 0px 20px;">
@@ -116,6 +108,7 @@
 					assumenda, minus quia saepe nulla a id. Quia corrupti, non velit!
 				</td>
 			</tr>
+		</tbody>
 		</table>
 		
 		<footer>Footer</footer>
